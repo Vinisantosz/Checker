@@ -1,0 +1,23 @@
+# Versão mínima do CMake
+cmake_minimum_required(VERSION 3.29.3)
+
+# Nome do projeto
+project(CHECKER)
+
+# Definição do padrão de compilação C++
+set(CMAKE_CXX_STANDARD 17)
+
+# Arquivos de origem
+set(SOURCES
+    main.cpp
+    card.cpp
+)
+
+# Diretório de includes (onde os arquivos .h estão localizados)
+include_directories(${CMAKE_SOURCE_DIR})
+
+# Adicionar o executável e definir o nome como "app"
+add_executable(app ${SOURCES})
+
+# Vincular a biblioteca CURL ao executável
+target_link_libraries(app ${CURL_LIBRARIES})

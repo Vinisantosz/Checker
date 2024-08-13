@@ -1,0 +1,3 @@
+D:/checker/build/CMakeFiles/app.dir
+D:/checker/build/CMakeFiles/edit_cache.dir
+D:/checker/build/CMakeFiles/rebuild_cache.dir
